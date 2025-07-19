@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bdoggyorange</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #232526 0%, #414345 100%);
+            color: #e0e0e0;
+        }
+        .header {
+            background: rgba(30,30,30,0.85);
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            border-bottom: 2px solid #00c3ff;
+        }
+        .header h1 {
+            font-family: 'Roboto', Arial, sans-serif;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+            color: #00c3ff;
+        }
+        .header .code {
+            font-size: 2.5rem;
+            margin-top: 0.5rem;
+        }
+        .about {
+            max-width: 700px;
+            margin: 2rem auto;
+            background: rgba(0,195,255,0.07);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+        }
+        .about h2 {
+            color: #00c3ff;
+            margin-top: 0;
+        }
+        .portfolio {
+            max-width: 900px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: rgba(40,44,52,0.95);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,195,255,0.15);
+            text-align: center;
+            transition: transform 0.2s;
+            border: 1px solid #00c3ff33;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 4px 24px #00c3ff44;
+        }
+        .card img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 8px #00c3ff88);
+        }
+        .card h3 {
+            color: #00c3ff;
+            margin-bottom: 0.5rem;
+        }
+        .contact {
+            text-align: center;
+            margin: 3rem 0 2rem 0;
+        }
+        .contact a {
+            color: #00c3ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        @media (max-width: 600px) {
+            .header h1 { font-size: 2rem; }
+            .about, .portfolio { padding: 1rem; }
+        }
+    </style>
+</head>
+    <body>
+        <nav style="background: #232526; border-bottom: 2px solid #00c3ff; padding: 0.5rem 0; text-align: right;">
+            <a href="https://github.com/BdoggyOrange" target="_blank" style="color: #00c3ff; text-decoration: none; font-weight: bold; font-size: 1.1rem; margin-right: 2rem;">GitHub</a>
+        </nav>
+        <div class="header">
+            <div class="code">&#60;&#47;&#62; 💻</div>
+            <h1>bdoggyorange</h1>
+            <p>Code Enthusiast & Portfolio</p>
+        </div>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm <strong>bdoggyorange</strong>! I specialize in coding with <strong>C#</strong>, <strong>Python</strong>, and <strong>HTML</strong>. From building web applications to scripting and backend development, I love solving problems and creating cool projects with code.
+        </p>
+    </section>
+    <section class="portfolio">
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" alt="Web Dev">
+            <h3>Web Development</h3>
+            <p>Explore my web projects, from sleek portfolios to dynamic web apps. I love working with HTML, CSS, JavaScript, and modern frameworks.</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Raspberry Pi">
+            <h3>Raspberry Pi Projects</h3>
+            <p>Explore my Raspberry Pi creations, from smart home automation to IoT experiments. I love tinkering with hardware and bringing code to life!</p>
+        </div>
+        <div class="card">
+            <img src="https://cdn-icons-png.flaticon.com/512/2721/2721308.png" alt="Open Source">
+            <h3>Open Source</h3>
+            <p>I contribute to open source projects and collaborate with developers worldwide. See my GitHub and community work.</p>
+        </div>
+    </section>
+    <div class="contact">
+        <h2>Contact</h2>
+        <p>Want to connect? Email me at <a href="mailto:bdoggyorange@example.com">bdoggyorange@bdoggyorange.xyz</a></p>
+    </div>
+</body>
+</html>
